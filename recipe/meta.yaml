@@ -1,5 +1,5 @@
 {% set name = "cmapy" %}
-{% set version = "0.2" %}
+{% set version = "0.5" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3b6f9b4202ed65fef36b5677d69edff8a569cc03cd0d7f0b8f52b89a0f66173c
+  sha256: 741d27a56e4c836bbad3fffe3c99fdf3c206313301efcb43b52de9e87ae256f1
 
 build:
   number: 0

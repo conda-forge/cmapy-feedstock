@@ -5,7 +5,7 @@ Home: https://gitlab.com/cvejarano-oss/cmapy/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Use Matplotlib colormaps with OpenCV in Python.
 

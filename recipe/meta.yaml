@@ -6,25 +6,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: cb52a6b3057c49a146fb0964b8302f2fb7d61dfe6ae6de1a98b636aace805255
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
     - pip
-    - python >=3.0
+    - python {{ python_min }}
   run:
     - matplotlib-base
     - numpy
     - OpenCV >=3.3.0
-    - python >=3
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - cmapy
 

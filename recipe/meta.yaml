@@ -16,8 +16,8 @@ build:
 
 requirements:
   host:
-    - pip
     - python {{ python_min }}
+    - pip
   run:
     - matplotlib-base
     - numpy
